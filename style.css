@@ -1,3 +1,82 @@
-h1 {
-text-transform: uppercase;
+#header {
+  width: 800px;
+  background: rgb(90,120,146);
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  
+} 
+.block-title {
+ font-size: 29px;
+  margin: 10px;
 }
+
+.block-label {
+  margin: ;
+  margin-left: 15px;
+  font-size: 11px;
+}
+
+ #crew-block {
+   background: rgb(146,178,203);
+   flex-grow: 1;
+   border: 3px outset rgb(109,141,171);
+}
+
+#perigi-block {
+  flex-grow: 1;
+  border: 3px outset rgb(109,141,171)
+}
+
+#apogee-block {
+  flex-grow: 1;
+  border: 3px outset rgb(109,141,171)
+}
+
+#relative-altitude-block {
+  flex-grow: 1;
+  border: 3px outset rgb(109,141,171)
+}
+
+#range-to-iss-block {
+  flex-grow: 1;
+  border: 3px outset rgb(109,141,171)
+}
+
+#world-photo-block {
+  width: 800px;
+}
+
+#curent-time-block {
+  width: 31%;
+  border: 4px outset rgb(109,141,171)
+}
+
+#chart-block {
+  width: 23%;
+  border: 4px outset rgb(109,141,171)
+}
+
+#timer-block {
+  width: 23%;
+  border: 4px outset rgb(109,141,171)
+}
+
+#speed-block {
+  width: 23%;
+  border: 4px outset rgb(109,141,171)
+}
+
+.timer {
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+.status-1 {
+  flex-grow: 1;
+}
+
+
+
