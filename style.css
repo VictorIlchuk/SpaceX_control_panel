@@ -1,82 +1,67 @@
-#header {
-  width: 800px;
-  background: rgb(90,120,146);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+width: 800px;
+font-family: 'Roboto', sans-serif;
+color: #fff;
+}
+
+.values-row {
   display: flex;
-  flex-direction: row;
-  font-size: 15px;
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  
-} 
+}
+
+.block {
+  border: 2px groove rgb(109,141,171);
+  padding-left: 10px;
+  background-color: rgb(82, 112, 137);
+  background: linear-gradient(to top, rgb(82, 112, 137), rgb(123, 149, 182));
+  flex-grow: 1;
+}
+
+#crew-block {
+  background: rgb(146,178,203);
+}
+
 .block-title {
- font-size: 29px;
-  margin: 10px;
+ font-size: 33px;
+
 }
 
 .block-label {
-  margin: ;
-  margin-left: 15px;
   font-size: 11px;
-}
-
- #crew-block {
-   background: rgb(146,178,203);
-   flex-grow: 1;
-   border: 3px outset rgb(109,141,171);
-}
-
-#perigi-block {
-  flex-grow: 1;
-  border: 3px outset rgb(109,141,171)
-}
-
-#apogee-block {
-  flex-grow: 1;
-  border: 3px outset rgb(109,141,171)
-}
-
-#relative-altitude-block {
-  flex-grow: 1;
-  border: 3px outset rgb(109,141,171)
-}
-
-#range-to-iss-block {
-  flex-grow: 1;
-  border: 3px outset rgb(109,141,171)
-}
-
-#world-photo-block {
-  width: 800px;
-}
-
-#curent-time-block {
-  width: 31%;
-  border: 4px outset rgb(109,141,171)
-}
-
-#chart-block {
-  width: 23%;
-  border: 4px outset rgb(109,141,171)
-}
-
-#timer-block {
-  width: 23%;
-  border: 4px outset rgb(109,141,171)
-}
-
-#speed-block {
-  width: 23%;
-  border: 4px outset rgb(109,141,171)
 }
 
 .timer {
   font-size: 22px;
-  margin-left: 15px;
 }
 
-.status-1 {
+#status-systems-row {
+  display: flex;
+}
+
+.status {
+  background: linear-gradient(to top, rgb(82, 112, 137), rgb(123, 149, 182));
+  width: 800px;
   flex-grow: 1;
 }
 
+.left-column-top {
+  display: flex;
+}
 
+.item-column {
+  flex-grow: 1;
+}
 
+.timer-parametrs {
+  display: flex;
+}
+
+.item {
+
+  flex-grow: 1;
+}
+
+#schedule-block {
+  display: flex;
+}

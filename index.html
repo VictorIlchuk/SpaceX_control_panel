@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Title</title>
-</head>
-<body>
-	<div id="header" class="row">
-		<div id="crew-block" class="block">
-			<small class="block-label">Crew</small>
-			<div class="block-title">Dragon</div>
-		</div>
-        <div id="perigi-block" class="block">
-			<small class="block-label">Perigi</small>
-			<div class="block-title">185.013m</div>
-		</div>
-	    <div id="apogee-block" class="block">
-    		<small class="block-label">Apogee</small>
-    		<div class="block-title">360.304m</div>
-    	</div>
-    	<div id="relative-altitude-block" class="block">
-    		<small class="block-label">Relative Altitude</small>
-    		<div class="block-title">50,948</div>
-    	</div>
-    	<div id="range-to-iss-block" class="block">
-			<small class="block-label">Range to ISS</small>
-			<div class="block-title">625,713</div>
-		</div>
-	</div>
-	<div id="world-photo-block">
-		<img src="https://sciexaminer.com/wp-content/uploads/2017/02/Gliese-411b.jpg" width="800px" alt="earth photo">
-	</div>
-	<div id="header" class="row">
-		<div id="curent-time-block">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>SpaceX</title>
+  </head>
+  <body>
+    <div id="height-row" class="values-row">
+      <div id="crew-block" class="block">
+         <small class="block-label">Crew</small>
+         <div class="block-title">Dragon</div>
+      </div>
+      <div id="perigee-block" class="block">
+          <small class="block-label">Perigee</small>
+          <div class="block-title">185.013</div>
+        </div>
+      <div id="apogee-block" class="block">
+        <small class="block-label">Apogee</small>
+        <div class="block-title">360.304m</div>
+      </div>
+      <div id="altitude-block" class="block">
+        <small class="block-label">Relative Altitude</small>
+        <div class="block-title">50,948m</div>
+      </div>
+      <div id="range-block" class="block">
+        <small class="block-label">Range to ISS</small>
+        <div class="block-title">625,713</div>
+      </div>
+    </div>
+    <div id="earth-photo">
+      <img src="earth.jpg" alt="earth photo">
+    </div>
+    <div id="speed-row" class="values-row">
+      <div id="curent-time-block" class="block">
 			<small class="block-label">Day 131</small>
 			<div class="block-title">13:46:11</div>
 		</div>
-		<div id="chart-block">
-			<div>chart</div>
-		</div>
-		<div id="timer-block">
+      <div id="chart-block" class="block">
+      <div>chart</div>
+    </div>
+    <div id="timer-block" class="block">
 			<div class="block-label">
 				<span>Next Burn</span>
 				<span>Enabled</span>
@@ -50,37 +50,49 @@
 				<span>DAY 131</span>
 			</div>
 		</div>
-		<div id="speed-block">
-			<small class="block-label">Target V</small>
-			<div class="timer" "block-label">33,5 m/s</div>
-			<small class="block-label">Truster Temps</small>
-		</div>
-	</div>
-	<div id="header" class="row">
-		<div id="status">
-			<span class="status-1">0 ALARMS</span>
-			<span class="status-2">ALL SYSTEMS NOMINAL</span>
-		</div>
-	</div>
-	<div  id="header">
-		<div>
-			<div>-0:08:24</span>
-			<div>
-				<span>Next LOSS</span>
-				<span>13:54:36</span>
-			</div>
-			<div>
-				<span>(00:03:17)</span>
-				<span>DAY 131</span>
-			</div>
-			<div>
-			     <div>-02:51:02</div>
-			     <div>Estimated ISS Arrival</div>
-			<div>
-				<span>(00:03:17)</span>
-				<span>DAY 131</span>
-			</div>
-		</div>
-	</div>
+    <div id="curent-speed-block" class="block">
+    <small class="block-label">Target V</small>
+    <div class="timer">33,5 m/s</div>
+    <small class="block-label">Truster Temps</small>
+    </div>
+    </div>
+    <div id="status-systems-row">
+			<div id="status-1" class="status">0 ALARMS</div>
+			<div id="status-2" class="status">ALL SYSTEMS NOMINAL</div>
+    </div>
+    <div id="timer-raw" class="values-row">
+       <div id="left-column" class="block">
+         <div id="left-block-top" class="timer-parametrs">
+           <div class="item">
+             <div class="block-title">-0:08:24</div>
+           </div>
+           <div class="item">
+             <div class="block-label">Next LOS</div>
+             <div class="block-label">(00:03:17)</div>
+           </div>
+           <div class="item">
+             <div class="block-label">13:54:36</div>
+             <div class="block-label">DAY 131</div>
+           </div>
+         </div>
+         <div id="left-block-bottom" class="timer-parametrs">
+           <div class="item">
+             <div class="block-title">-02:51:02</div>
+           </div>
+           <div class="item">
+             <div class="block-label">Estaimated ISS Arrival</div>
+           </div>
+           <div class="item">
+             <div class="block-label">16:37:15</div>
+             <div class="block-label">DAY 131</div>
+           </div>
+         </div>
+      </div>
+       <div id="right-column" class="block">3</div>
+      </div>
+      <div id="schedule-block">
+  			<div class="status">Schedule</div>
+  			<div class="status">ALL EVENTS V</div>
+      </div>
 </body>
 </html>
