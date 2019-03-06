@@ -156,12 +156,15 @@ img {
   font-size: 14px;
   ding: 5px 8px;
 }
+.progres-table {
+  position: relative;
+}
 
 .current-block-line {
   position: absolute;
-  background: red;
+  background: rgb(157, 237, 241);
   height: 100%;
-  width: 3px;
+  width: 2px;
   top: 0px;
-  left: 15%;
+  left: 25%;
 }
