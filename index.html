@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="height-row" class="values-row">
-      <div id="crew-block" class="block">
+      <div id="crew-block" class="block crew-block">
          <small class="block-label">Crew</small>
          <div class="block-title">Dragon</div>
       </div>
@@ -29,40 +29,39 @@
       </div>
     </div>
     <div id="earth-photo">
-      <img src="earth.jpg" alt="earth photo">
+      <img src="https://www.gstatic.com/earth/social/00_generic_facebook-001.jpg" alt="earth photo">
     </div>
     <div id="speed-row" class="values-row">
       <div id="curent-time-block" class="block">
-			<small class="block-label">Day 131</small>
-			<div class="block-title">13:46:11</div>
-		</div>
-      <div id="chart-block" class="block">
-      <div>chart</div>
+      <small class="block-label">Day 131</small>
+      <div class="block-title">13:46:11</div>
+    </div>
+      <div class="block chart-block">
     </div>
     <div id="timer-block" class="block">
-			<div class="block-label">
-				<span>Next Burn</span>
-				<span>Enabled</span>
-			</div>
-			<div class="timer">-0:05:48</div>
-			<div class="block-label">
-				<span>13:52:00</span>
-				<span>DAY 131</span>
-			</div>
-		</div>
+      <div class="block-label">
+        <span>Next Burn</span>
+        <span>Enabled</span>
+      </div>
+      <div class="timer">-0:05:48</div>
+      <div class="block-label">
+        <span>13:52:00</span>
+        <span>DAY 131</span>
+      </div>
+    </div>
     <div id="curent-speed-block" class="block">
     <small class="block-label">Target V</small>
     <div class="timer">33,5 m/s</div>
     <small class="block-label">Truster Temps</small>
     </div>
     </div>
-    <div id="status-systems-row">
-			<div id="status-1" class="status">0 ALARMS</div>
-			<div id="status-2" class="status">ALL SYSTEMS NOMINAL</div>
+    <div id="status-systems-row" class="status-systems-row block">
+      <div id="status-1" class="status">0 ALARMS</div>
+      <div id="status-2" class="status">ALL SYSTEMS NOMINAL</div>
     </div>
     <div id="timer-raw" class="values-row">
-       <div id="left-column" class="block">
-         <div id="left-block-top" class="timer-parametrs">
+       <div id="left-column" class="left-column block">
+         <div id="left-block-top" class="left-block-top timer-parametrs">
            <div class="item">
              <div class="block-title">-0:08:24</div>
            </div>
@@ -75,7 +74,7 @@
              <div class="block-label">DAY 131</div>
            </div>
          </div>
-         <div id="left-block-bottom" class="timer-parametrs">
+         <div id="left-block-bottom" class="timer-parametrs left-block-bottom">
            <div class="item">
              <div class="block-title">-02:51:02</div>
            </div>
@@ -88,11 +87,142 @@
            </div>
          </div>
       </div>
-       <div id="right-column" class="block">3</div>
+       <div id="right-column" class="right-column">
+         <div class="right-block-top block timer-parametrs">
+           <div class="item">
+             <div class="block-title">-0:23:23</div>
+           </div>
+           <div class="item">
+             <div class="block-label">Next Deorbit Window</div>
+             <div class="block-label">Pacific</div>
+           </div>
+           <div class="item">
+             <div class="block-label">14:09:36</div>
+             <div class="block-label">DAY 131</div>
+           </div>
+         </div>
+         <div class="right-block-bottom block timer-parametrs">
+           <div class="item">
+             <div class="block-label">Current breakout</div>
+             <div class="block-label">Retrograde</div>
+           </div>
+           <div class="item">
+             <div class="block-label spead">AV=0.5 m/s</div>
+           </div>
+         </div>
       </div>
-      <div id="schedule-block">
-  			<div class="status">Schedule</div>
-  			<div class="status">ALL EVENTS V</div>
       </div>
+      <div id="schedule-block" class="block status-systems-row">
+        <div class="status">Schedule</div>
+        <div class="status">ALL EVENTS V</div>
+      </div>
+    <div class="diferent-times-row block">
+      <div class="left-side">
+        <div class="time">13:10:00</div>
+        <div class="time">13:37:00</div>
+        <div class="time">13:46:45</div>
+        <div class="time">13:52:10</div>
+      </div>
+      <div class="right-side">
+        <div class="blocks-row border">
+          <div class="status-blocks">Rendzvous Burn GO/NO-GO</div>
+          <div class="status-blocks">Ground</div>
+        </div>
+        <div class="blocks-row border">
+          <div class="status-blocks">Prepare for rendezvouz burn</div>
+          <div class="status-blocks">Crew</div>
+        </div>
+        <div class="blocks-row border">
+          <div class="status-blocks">Rndezvous burn slow</div>
+          <div class="status-blocks">Dragon</div>
+        </div>
+        <div class="blocks-row">
+          <div class="status-blocks">Rendezvous Burn</div>
+          <div class="status-blocks">Dragon</div>
+        </div>
+      </div>
+    </div>
+    <div class="rendezvous-row block">
+      <div class="doubleheader-row">
+        <div class="left-header">Rendezvous</div>
+        <div class="right-header">Approach</div>
+      </div>
+      <div class="progres-table">
+        <div class="row-progress">
+          <div class="title status">Ground</div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+        </div>
+        <div class="row-progress">
+          <div class="title status">TDRS</div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+        </div>
+        <div class="row-progress">
+          <div class="title status">ISS</div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+        </div>
+        <div class="row-progress">
+          <div class="title status">Eclipse</div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+        </div>
+        <div class="row-progress">
+          <div class="title status">Burn</div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+        </div>
+        <div class="row-progress">
+          <div class="title status">Crew</div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+          <div class="status"></div>
+        </div>
+        <div class="current-block-line"></div>
+      </div>
+      <div class="progress-value"></div>
+    </div>
 </body>
 </html>

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-width: 800px;
-font-family: 'Roboto', sans-serif;
-color: #fff;
+  width: 800px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffff;
+  margin: 0;
 }
 
 .values-row {
@@ -12,14 +13,17 @@ color: #fff;
 
 .block {
   border: 2px groove rgb(109,141,171);
-  padding-left: 10px;
-  background-color: rgb(82, 112, 137);
-  background: linear-gradient(to top, rgb(82, 112, 137), rgb(123, 149, 182));
+  padding: 10px;
+  background: linear-gradient(to top, rgb(82, 112, 137), rgb(123, 149, 182)); 
   flex-grow: 1;
 }
 
-#crew-block {
+.crew-block {
   background: rgb(146,178,203);
+}
+
+img {
+  width: 800px;
 }
 
 .block-title {
@@ -31,37 +35,133 @@ color: #fff;
   font-size: 11px;
 }
 
-.timer {
-  font-size: 22px;
+.chart-block {
+  background: url(chart.png) no-repeat;
+  background-size: 100%;
+  width: 100px;
 }
 
-#status-systems-row {
+.status-systems-row {
   display: flex;
-}
-
-.status {
-  background: linear-gradient(to top, rgb(82, 112, 137), rgb(123, 149, 182));
-  width: 800px;
-  flex-grow: 1;
-}
-
-.left-column-top {
-  display: flex;
-}
-
-.item-column {
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .timer-parametrs {
   display: flex;
+  justify-content: space-between;
 }
 
-.item {
-
-  flex-grow: 1;
+.right-column {
+  width: 400px;
 }
 
-#schedule-block {
+.left-block-bottom {
+  border-top: 2px groove rgb(109,141,171);
+  padding: 10px;
+}
+
+.left-block-top {
+  border-bottom: 2px groove rgb(109,141,171);
+  padding: 10px;
+}
+
+.left-column {
+  border-collapse: collapse;
+  padding: 0px;
+}
+
+.right-block-top {
+  border-bottom: 2px groove rgb(109,141,171);
+  padding: 10px;
+}
+
+.right-block-bottom {
+  border-top: 2px groove rgb(109,141,171);
+  padding: 10px;
+  height: 39px;
+}
+
+.spead {
+  font-size: 18px;
+}
+
+.diferent-times-row {
   display: flex;
+}
+
+.left-side {
+  width: 100px;
+}
+
+.time {
+   margin-top: 6px;
+  font-size: 17px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  color: rgb(183, 204, 215);
+  font-size: 15px;
+}
+
+.blocks-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+}
+
+.border {
+  border-bottom: 2px rgb(79, 106, 130) solid;
+}
+
+.rendezvous-row {
+ padding: 0px;
+}
+
+.doubleheader-row {
+  display: flex;
+  background: rgb(129, 161, 195);
+}
+
+.left-header {
+  flex-grow: 2;
+  padding: 5px 10px;
+}
+
+.right-header {
+  flex-grow: 1;
+  padding: 5px 10px;
+  border-left: 2px rgb(86, 113, 149) solid;
+}
+
+.progress-value {
+  background: rgb(157, 237, 241);
+  height: 20px;
+  width: 30%;
+  transition: all 1s ease-in-out;
+}
+
+.row-progress {
+  display: flex;
+  background: rgb(99, 130, 158);
+}
+
+.status {
+  flex-grow: 1;
+  border-right: 2px rgb(86, 113 ,149) solid;
+  border-bottom: 2px rgb(86, 113 ,149) solid;
+  flex-basis: 20%;
+  font-size: 14px;
+  ding: 5px 8px;
+}
+
+.current-block-line {
+  position: absolute;
+  background: red;
+  height: 100%;
+  width: 3px;
+  top: 0px;
+  left: 15%;
 }
